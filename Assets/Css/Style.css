@@ -632,4 +632,14 @@ h3 {
         background: #ff8fa8;
         object-fit: fill;
     }
+    .letter   { width: min(480px, 80vw); }
+.letter p { font-size: 26px; }
+
+
+.fox   { height: calc(var(--cake) * 1.0); right: calc(50% + var(--cake) / 2 + 40px); }
+.whale { height: calc(var(--cake) * 0.9); left:  calc(50% + var(--cake) / 2 + 40px); }
+
+
+.say-fox   { right: calc(50% + var(--cake) / 2 + 40px); bottom: calc(2vh + var(--cake) * 1.05); }
+.say-whale { left:  calc(50% + var(--cake) / 2 + 60px); bottom: calc(2vh + var(--cake) * 0.95); }
 }
