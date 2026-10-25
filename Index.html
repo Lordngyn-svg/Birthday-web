@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Chúc mừng sinh nhật </title>
+    
+    <link rel="stylesheet" href="Assets/Css/Base.css">
+    <link rel="stylesheet" href="Assets/Css/Style.css">
+    
+</head>
+<body>
+    <!-- MÀN HÌNH KHÓA -->
+    <video class="video" width="100%" height="100%" autoplay muted playsinline>
+        <source src="/Assets/Video/Pink Yellow and White Feminine Welcome to My Channel YouTube Intro (1).mp4 " type="video/mp4">
+    </video>
+
+
+    <div id="passcode" class="container" >
+        
+        <div class="card">
+            <div class="avatar">
+                <img src="/Assets/Image/Mèo trắng ôm bó hoa hồng đỏ.png" class="icon"></img> 
+            </div>
+        </div>
+        <h1 id="chu">Enter a passcode</h1>
+        <p>Tips: Ngay_Sinh</p>
+        <div id="box">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div id="pass">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button" style="visibility: hidden"></div>
+            <div class="button">0</div>
+            <div class="button" style="visibility: hidden"></div>
+        </div>
+        <div id="unlock">UNLOCK</div>
+        <div id="tb" hidden >Sai mật khẩu! Thử lại nhé.</div>
+
+
+    </div>
+    <!-- END MÀN HÌNH KHÓA -->
+
+
+
+    <!-- MÀN HÌNH CHÍNH -->
+    <div id="main" class="hidden">
+        <audio id="music" src="Assets/Audio/andriih-happy-birthday-575820-[AudioTrimmer.com].mp3" loop></audio>
+        <!-- Cờ -->
+        <svg id="banner" viewBox="0 0 1000 700" width="100%">
+            <path id="string1" d="M 100 150 Q 500 330  900 150" fill="none" stroke="#ddd" stroke-width="4"></path>
+            <path id="string2" d="M 40 330 Q 500 560  960 330" fill="none" stroke="#ddd" stroke-width="4"></path>
+        </svg>
+        <!-- end cờ -->
+        
+        <!-- BÁNH -->
+
+        <!-- cáo và cá -->
+        <img class="fox" src="/Assets/Image/cao (1).png" >
+        <div class="say say-fox">Chúc cậu sinh nhật vui vẻ nhé! 🎉</div>
+        <img class="whale" src="/Assets/Image/cá voi.png">
+        <div class="say say-whale">Chúc cậu ước điều gì cũng thành sự thật! ✨</div>
+
+
+        <!-- end cáo và cá -->
+
+
+        <svg id="cake" width="400" height="400" viewBox="0 0 400 400">
+
+            
+            <!-- ĐĨA -->
+            <ellipse cx="200" cy="355" rx="170" ry="18" fill="#e0e0e0"></ellipse>
+            
+            
+            <!--Tầng 1  -->
+            <rect x="60" y="280" width="280" height="75" rx="8" fill="#f8a5c2"></rect>
+            <!-- Tầng 2 -->
+            <rect x="100" y="210" width="200" height="70" rx="8" fill="#fbc4d8"></rect>
+            <!-- Tầng 3 -->
+            <rect x="140" y="145" width="120" height="65" rx="8" fill="#fdd9e5"></rect>
+
+            <!-- kem t1 -->
+            <path fill="#ffffff" d="M55 280 Q55 272 65 272 H335 Q345 272 345 280 V290
+            q-10 0 -14 10 q-6 14 -12 0 q-4 -10 -14 -10
+            q-10 0 -14 10 q-6 14 -12 0 q-4 -10 -14 -10
+            q-10 0 -14 10 q-6 14 -12 0 q-4 -10 -14 -10
+            q-10 0 -14 10 q-6 14 -12 0 q-4 -10 -14 -10
+            q-10 0 -14 10 q-6 14 -12 0 q-4 -10 -14 -10
+            q-10 0 -14 10 q-6 14 -12 0 q-4 -10 -14 -10
+            q-10 0 -14 10 q-6 14 -12 0 q-4 -10 -14 -10
+            H55 Z">
+            </path>
+            
+            <!-- kem t2 -->
+            <path fill="#ffffff" d="M95 210 Q95 202 105 202 H295 Q305 202 305 210 V218
+            q-8 0 -10 8 q-5 11 -10 0 q-3 -8 -10 -8
+            q-8 0 -10 8 q-5 11 -10 0 q-3 -8 -10 -8
+            q-8 0 -10 8 q-5 11 -10 0 q-3 -8 -10 -8
+            q-8 0 -10 8 q-5 11 -10 0 q-3 -8 -10 -8
+            q-8 0 -10 8 q-5 11 -10 0 q-3 -8 -10 -8
+            q-8 0 -10 8 q-5 11 -10 0 q-3 -8 -10 -8
+            q-8 0 -10 8 q-5 11 -10 0 q-3 -8 -10 -8
+            H95 Z">
+            </path>
+            <!-- kem t3 -->
+            <path fill="#ffffff" d="M135 145 Q135 137 145 137 H255 Q265 137 265 145 V152
+            q-6 0 -8 7 q-5 9 -10 0 q-2 -7 -8 -7
+            q-6 0 -8 7 q-5 9 -10 0 q-2 -7 -8 -7
+            q-6 0 -8 7 q-5 9 -10 0 q-2 -7 -8 -7
+            q-6 0 -8 7 q-5 9 -10 0 q-2 -7 -8 -7
+            q-6 0 -8 7 q-5 9 -10 0 q-2 -7 -8 -7
+            H135 Z">
+            </path>
+            
+            
+
+        <!-- nến chính -->
+        <defs>
+            <path id="n2" d="M152 90 Q152 78 171 78 Q190 78 190 92 Q190 102 154 134 L192 134"></path>
+            <path id="n7" d="M208 80 L250 80 L226 134"></path>
+        </defs>
+
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <g stroke="#ffe3ef" stroke-width="18"><use href="#n2"/><use href="#n7"/></g>
+            <g stroke="#ff5fa2" stroke-width="11"><use href="#n2"/><use href="#n7"/></g>
+        </g>
+            
+        <path class="flame" fill="#ffb830" style="animation-delay:3.4s"
+            d="M171 54 C173 58 176 61 176 64 A5 5 0 0 1 166 64 C166 61 169 58 171 54 Z"></path>
+        <path class="flame" fill="#ffb830" style="animation-delay:3.6s"
+            d="M229 56 C231 60 234 63 234 66 A5 5 0 0 1 224 66 C224 63 227 60 229 56 Z"></path>
+        </svg>
+        <!-- END BÁNH -->
+        
+        <canvas id="confetti"></canvas>
+        <div class="thiep" id="thiep"><span>❤</span></div>
+        <div class="letter" id="letter">
+            <h3>🐳Chúc mừng sinh nhật chị lyly!🦊</h3>
+            <br>
+            <p>Chúc người đẹp thêm tuổi mới vẫn luôn trẻ trung, tươi tắn, xink xắn, luôn nhiệt huyết hết mình. Và đặc biệt hãy yêu thương bản thân mình nhiều hơn nhé!!!</p>
+        </div>
+
+        <!-- bóng bay -->
+        <div class="deco deco-left">
+            <svg class="strings" viewBox="0 0 260 520">
+            <path d="M125 167 L130 425 M55 217 L130 425 M202 202 L130 425 M140 277 L130 425"/>
+            </svg>
+            <div class="balloon b-top"></div>
+            <div class="balloon b-left"></div>
+            <div class="balloon b-right"></div>
+            <div class="balloon b-front"></div>
+            <div class="mini mini-l">
+                <div class="g-lid"></div>
+                <div class="g-body"></div>
+            </div>
+            <div class="mini mini-r">
+                <div class="g-lid"></div>
+                <div class="g-body"></div>
+            </div>
+            <div class="gift-big">
+                <div class="g-lid"></div>
+                <div class="g-body"></div>
+            </div>
+        </div>
+
+        <div class="deco deco-right">
+            <svg class="strings" viewBox="0 0 260 520">
+            <path d="M125 167 L130 425 M55 217 L130 425 M202 202 L130 425 M140 277 L130 425"/>
+            </svg>
+            <div class="balloon b-top"></div>
+            <div class="balloon b-left"></div>
+            <div class="balloon b-right"></div>
+            <div class="balloon b-front"></div>
+            <div class="mini mini-l">
+                <div class="g-lid"></div>
+                <div class="g-body"></div>
+            </div>
+            <div class="mini mini-r">
+                <div class="g-lid"></div>
+                <div class="g-body"></div>
+            </div>
+            <div class="gift-big">
+                <div class="g-lid"></div>
+                <div class="g-body"></div>
+            </div>
+        </div>
+
+        <!-- end bóng bay -->
+        <div id="volBtn">🔊</div>
+
+
+    </div>
+    
+    <!-- MÀN HÌNH CHÍNH -->
+
+
+
+
+<script src="Assets/JS/Index.js"></script>
+</body>
+</html>
