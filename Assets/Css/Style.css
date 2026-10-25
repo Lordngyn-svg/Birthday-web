@@ -571,7 +571,7 @@ h3 {
 @media (orientation: landscape) and (max-height: 500px) {
 
     .video { height: 100dvh; }
-    #main  { min-height: 100dvh; --cake: 50vh; }
+    #main  { min-height: 100dvh; --cake: 40vh; }
 
     /* (a) Màn mật mã: chia 2 cột, bên trái là tiêu đề + ô nhập, bên phải là bàn phím */
     .container {
@@ -603,7 +603,7 @@ h3 {
     #pass .button { width: 44px; height: 44px; line-height: 44px; font-size: 24px; }
 
     /* (b) Cờ nhỏ lại để không đè lên bánh */
-    #banner { width: 280px; }
+    #banner { width: 220px; }
 
     /* (c) Bóng bay + hộp quà */
     .deco { zoom: 0.45; }
@@ -617,7 +617,7 @@ h3 {
     #volBtn { right: calc(15px + env(safe-area-inset-right)); }
     .thiep {
         bottom: auto;
-        top: 43vh;
+        top: 68vh;
         width: 12vh;
         height: 8vh;
     }
