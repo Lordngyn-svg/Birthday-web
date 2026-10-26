@@ -568,7 +568,9 @@ h3 {
     #banner { top: calc(5dvh + env(safe-area-inset-top)); }
 
     /* Bóng bay + hộp quà: nâng lên ngang số 27 */
-    .deco { zoom: 0.36; bottom: calc((3vh + var(--cake) * 0.66) / 0.36); }
+     .deco { --s: 0.36; bottom: calc(3vh + var(--cake) * 0.66); }
+    .deco-left  { transform-origin: 0 100%;    transform: scale(var(--s)); }
+    .deco-right { transform-origin: 100% 100%; transform: translateX(calc(-260px * var(--s))) scale(calc(var(--s) * -1), var(--s)); }
 
     /* Dưới đáy chỉ còn cáo + cá voi */
     .fox   { left: 1%;  right: auto; height: calc(var(--cake) * 0.25); z-index: 6; }
@@ -586,7 +588,7 @@ h3 {
 /* Điện thoại dọc nhưng màn hình thấp: thu nhỏ cờ + bóng bay để không đè nhau */
 @media (max-width: 480px) and (max-height: 620px) {
     #banner { width: 300px; }
-    .deco { zoom: 0.3; bottom: calc((3vh + var(--cake) * 0.66) / 0.3); }
+    .deco { --s: 0.3; }
 }
 
 
