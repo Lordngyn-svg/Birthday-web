@@ -527,43 +527,66 @@ h3 {
 
 @media (max-width: 480px) {
 
-    /* Dùng dvh để không bị thanh địa chỉ Safari che */
     .video { height: 100dvh; }
-    #main  { min-height: 100dvh; --cake: min(72vw, 55dvh); }
 
-    /* Màn hình khóa: căn giữa, nút to dễ bấm */
+    /* ===== MÀN HÌNH MẬT MÃ ===== */
     .container {
+        --btn: clamp(46px, 8dvh, 58px);
         width: 89%;
         height: 92dvh;
         margin-top: 4dvh;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
     }
-    .box { width: 48px; height: 48px; }
-    #pass { grid-template-columns: repeat(3, 64px); }
+    .card {
+        width: clamp(64px, 11dvh, 88px);
+        height: clamp(64px, 11dvh, 88px);
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    #chu { font-size: clamp(22px, 3.6dvh, 28px); margin: 0; }
+    .container p { font-size: clamp(14px, 2.3dvh, 17px); margin: 0; }
+    #box { margin: 0; }
+    .box { width: clamp(38px, 6dvh, 46px); height: clamp(38px, 6dvh, 46px); }
+    #pass {
+        grid-template-columns: repeat(3, var(--btn));
+        gap: clamp(8px, 1.4dvh, 12px) 16px;
+    }
     #pass .button {
-        width: 64px;
-        height: 64px;
-        line-height: 64px;
+        width: var(--btn);
+        height: var(--btn);
+        line-height: var(--btn);
+        font-size: calc(var(--btn) * 0.5);
     }
+    #unlock { margin: 0 auto; height: clamp(36px, 5.5dvh, 42px); }
 
+    /* ===== MÀN HÌNH CHÍNH ===== */
+    #main { min-height: 100dvh; --cake: min(100vw, 58dvh); }
 
-    .fox   { left: 2%;  right: auto; height: calc(var(--cake) * 0.5); }
-    .whale { right: 2%; left: auto;  height: calc(var(--cake) * 0.45); }
+    #banner { top: calc(5dvh + env(safe-area-inset-top)); }
 
-    .say { max-width: 130px; font-size: 12px; padding: 8px 12px; }
-    .say-fox   { left: 2%;  right: auto; bottom: calc(2dvh + var(--cake) * 0.75); }
-    .say-whale { right: 2%; left: auto;  bottom: calc(2dvh + var(--cake) * 0.75); }
-    .say-fox::after   { left: 24px;  right: auto; }
-    .say-whale::after { right: 24px; left: auto; }
+    /* Bóng bay + hộp quà: nâng lên ngang số 27 */
+    .deco { zoom: 0.36; bottom: calc((3vh + var(--cake) * 0.66) / 0.36); }
 
-    
-    .deco { zoom: 0.35; }
+    /* Dưới đáy chỉ còn cáo + cá voi */
+    .fox   { left: 1%;  right: auto; height: calc(var(--cake) * 0.25); z-index: 6; }
+    .whale { right: 1%; left: auto;  height: calc(var(--cake) * 0.20); z-index: 6; }
+
+    .say { max-width: 120px; font-size: 12px; padding: 8px 12px; z-index: 7; }
+    .say-fox   { left: 4px;  right: auto; bottom: calc(2vh + var(--cake) * 0.25 + 12px); }
+    .say-whale { right: 4px; left: auto;  bottom: calc(2vh + var(--cake) * 0.20 + 12px); }
+    .say-fox::after   { left: 40px;  right: auto; }
+    .say-whale::after { right: 40px; left: auto; }
 
     #volBtn { top: calc(15px + env(safe-area-inset-top)); }
-    #banner { top: env(safe-area-inset-top); }
+}
+
+/* Điện thoại dọc nhưng màn hình thấp: thu nhỏ cờ + bóng bay để không đè nhau */
+@media (max-width: 480px) and (max-height: 620px) {
+    #banner { width: 300px; }
+    .deco { zoom: 0.3; bottom: calc((3vh + var(--cake) * 0.66) / 0.3); }
 }
 
 
