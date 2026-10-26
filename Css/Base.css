@@ -1,0 +1,53 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,1000;1,6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+
+:root {
+    --color-1: #FC98AA;
+    --color-2: #FFF0F5;
+    --color-text: #C2185B;
+
+    --font: Inria Serif, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    font-family: var(--font);
+    user-select: none;                 
+    -webkit-user-select: none;         
+    -webkit-touch-callout: none;      
+    -webkit-tap-highlight-color: transparent; 
+    touch-action: manipulation;
+    
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%      { transform: translateX(-10px); }
+    40%      { transform: translateX(10px); }
+    60%      { transform: translateX(-10px); }
+    80%      { transform: translateX(10px); }
+}
+#main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 3vh;
+    background: url('/Assets/Image/nfxmdDKIrxRh9firgpmlt3QWHkQpfuO4g8xrqY8rwM2LZ7AJphKQEH8gk7GG9HCdtcU77TOcWbPs4zzARcXrnFgzfVd_BQ6vAUwjQzborPzzMhh9gyvdOX8CDkG-diPIjFQlStlGmetg8IGmMBpxFkktoLtGp-5hissijKk9jTLYbTl6iDSxftP6lvDr96oj.jpg') center / cover no-repeat;
+    --cake: min(500px, 62vh);
+}
+
+
+
+
